@@ -14,7 +14,7 @@ class PokeBallWidget extends StatelessWidget {
   final bool willChange;
   final Widget? child;
 
-  PokeBallWidget(
+  const PokeBallWidget(
       {Key? key,
       required this.color,
       this.opacity,
@@ -86,5 +86,5 @@ class PokeBallPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(PokeBallPainter oldDelegate) =>
-      oldDelegate.color != this.color || oldDelegate.opacity != this.opacity;
+      oldDelegate.color != color || oldDelegate.opacity != opacity;
 }

@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:http/http.dart' as http;
 
 const String _baseUrl = 'pokeapi.co';
