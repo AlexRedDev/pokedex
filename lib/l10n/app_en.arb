@@ -1,0 +1,11 @@
+{
+    "appTitle": "What Pokemon are you looking for?",
+    "searchHintText" : "Search Pokemon, Move, Ability etc?",
+    "viewAll" : "View All",
+    "pokedex" : "Pokedex",
+    "moves" : "Moves",
+    "abilities" : "Abilities",
+    "items" : "Items",
+    "locations" : "Locations",
+    "typeCharts" : "Type Charts"
+}
