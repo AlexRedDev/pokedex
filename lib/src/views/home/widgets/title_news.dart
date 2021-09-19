@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/navigation/app_navigation.dart';
 import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
-import 'package:provider/src/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class TitleNewsWidget extends StatelessWidget {
-  const TitleNewsWidget({
+class TitleNews extends StatelessWidget {
+  const TitleNews({
     Key? key,
     required this.localizations,
   }) : super(key: key);

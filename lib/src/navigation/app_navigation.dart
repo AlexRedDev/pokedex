@@ -16,12 +16,11 @@ class AppNavigation extends StatelessWidget {
           pages: [
             if (state == AppNavigationState.home)
               const MaterialPage(child: HomeView()),
-            if (state == AppNavigationState.category)
-              const MaterialPage(child: CategoryView()),
+            if (state == AppNavigationState.category) CategoryPage(),
             if (state == AppNavigationState.news)
-              const MaterialPage(child: NewsView()),
+              MaterialPage(key: ValueKey('NewsView'), child: NewsView()),
           ],
-          onPopPage: (route, result) => route.didPop(result),
+          onPopPage: (route, result) => route.didPop(route),
         );
       },
     );

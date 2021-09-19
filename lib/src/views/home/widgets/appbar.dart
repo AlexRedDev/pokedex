@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/views/home/widgets/grid_category_widget.dart';
+import 'package:pokedex/src/views/home/widgets/grid_category.dart';
 
-import 'search_widget.dart';
-import 'title_top_widget.dart';
+import 'search.dart';
+import 'title_top.dart';
 
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({Key? key, required this.localizations}) : super(key: key);
+class AppBar extends StatelessWidget {
+  const AppBar({Key? key, required this.localizations}) : super(key: key);
   final AppLocalizations localizations;
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,13 @@ class AppBarWidget extends StatelessWidget {
       floating: true,
       backgroundColor: Colors.white,
       expandedHeight: 450,
-      title: TitleTopWidget(localizations: localizations, context: context),
+      title: TitleTop(localizations: localizations, context: context),
       flexibleSpace: FlexibleSpaceBar(
         background: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            SearchWidget(localizations: localizations, context: context),
-            GridCategoryWidget(localizations: localizations),
+            Search(localizations: localizations, context: context),
+            GridCategory(localizations: localizations),
           ],
         ),
       ),

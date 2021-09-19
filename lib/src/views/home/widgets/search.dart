@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
-import 'package:provider/src/provider.dart';
 
-class SearchWidget extends StatelessWidget {
-  const SearchWidget({
+class Search extends StatelessWidget {
+  const Search({
     Key? key,
     required this.localizations,
     required this.context,
@@ -29,8 +27,7 @@ class SearchWidget extends StatelessWidget {
           children: [
             Expanded(
               child: IconButton(
-                onPressed: () =>
-                    context.read<AppNavigationCubit>().showCategory(),
+                onPressed: () {},
                 icon: const Icon(Icons.search, size: 28),
               ),
             ),

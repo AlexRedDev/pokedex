@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/views/home/widgets/appbar_widget.dart';
-import 'package:pokedex/src/views/home/widgets/list_news_widget.dart';
-import 'package:pokedex/src/views/home/widgets/title_news_widget.dart';
+import 'package:pokedex/src/views/home/widgets/appbar.dart' as custom;
+import 'package:pokedex/src/views/home/widgets/list_news.dart';
+import 'package:pokedex/src/views/home/widgets/title_news.dart';
 
 
 class HomeView extends StatefulWidget {
@@ -22,7 +22,7 @@ class _HomeViewState extends State<HomeView> {
       backgroundColor: Colors.white,
       body: CustomScrollView(
         slivers: [
-          AppBarWidget(localizations: localizations),
+          custom.AppBar(localizations: localizations),
           SliverToBoxAdapter(child: bodyWidget()),
         ],
       ),
@@ -33,8 +33,8 @@ class _HomeViewState extends State<HomeView> {
     return SingleChildScrollView(
       physics: const ScrollPhysics(),
       child: Column(children: [
-        TitleNewsWidget(localizations: localizations),
-        const ListNewsWidget(),
+        TitleNews(localizations: localizations),
+        const ListNews(),
       ]),
     );
   }

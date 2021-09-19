@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
-import 'package:provider/src/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ItemNewsWidget extends StatelessWidget {
-  const ItemNewsWidget({
+class ItemNews extends StatelessWidget {
+  const ItemNews({
     Key? key,
     required this.index,
   }) : super(key: key);
