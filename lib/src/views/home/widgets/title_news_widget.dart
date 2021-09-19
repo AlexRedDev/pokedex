@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pokedex/src/navigation/app_navigation.dart';
+import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
+import 'package:provider/src/provider.dart';
 
 class TitleNewsWidget extends StatelessWidget {
   const TitleNewsWidget({
@@ -21,7 +24,7 @@ class TitleNewsWidget extends StatelessWidget {
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () => context.read<AppNavigationCubit>().showNews(),
             child: Text(localizations.viewAll),
           )
         ],

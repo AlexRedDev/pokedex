@@ -12,10 +12,10 @@ class ItemNewsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => context.read<AppNavigationCubit>().showCategory(),
-      child: Container(
-        padding: const EdgeInsets.all(20.0),
+    return Container(
+      padding: const EdgeInsets.all(20.0),
+      child: GestureDetector(
+        onTap: () => context.read<AppNavigationCubit>().showNews(),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

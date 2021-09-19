@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/views/home/widgets/app_bar_widget.dart';
+import 'package:pokedex/src/views/home/widgets/appbar_widget.dart';
 import 'package:pokedex/src/views/home/widgets/list_news_widget.dart';
 import 'package:pokedex/src/views/home/widgets/title_news_widget.dart';
+
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);

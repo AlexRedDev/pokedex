@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
 import 'package:pokedex/src/views/home/widgets/grid_category_widget.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'search_widget.dart';
 import 'title_top_widget.dart';
@@ -13,6 +11,7 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      floating: true,
       backgroundColor: Colors.white,
       expandedHeight: 450,
       title: TitleTopWidget(localizations: localizations, context: context),

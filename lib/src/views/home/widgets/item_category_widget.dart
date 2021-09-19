@@ -1,10 +1,7 @@
-// ignore: file_names
-
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokedex/src/navigation/app_navigation_cubit.dart';
-import 'package:pokedex/src/views/category/category_view.dart';
 import 'package:pokedex/src/views/widgets/pokeball.dart';
+import 'package:provider/src/provider.dart';
 
 class ItemCategoryWidget extends StatelessWidget {
   const ItemCategoryWidget({
@@ -22,10 +19,7 @@ class ItemCategoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: GestureDetector(
-        onTap: () {
-          print('value');
-          context.read<AppNavigationCubit>().showCategory();
-        },
+        onTap: () => context.read<AppNavigationCubit>().showNews(),
         child: Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(

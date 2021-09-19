@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'item_category_widget.dart';
+import 'package:pokedex/src/views/home/widgets/item_category_widget.dart';
 
 class GridCategoryWidget extends StatelessWidget {
   const GridCategoryWidget({Key? key, required this.localizations})
