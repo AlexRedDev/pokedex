@@ -43,8 +43,8 @@ class ItemCategory extends StatelessWidget {
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
-              const PokeBallWidget(
-                size: Size(50, 50),
+              const PokeBall(
+                size: Size(40, 40),
                 color: Colors.white,
               ),
             ],

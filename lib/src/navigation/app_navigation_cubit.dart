@@ -4,6 +4,7 @@ enum AppNavigationState {
   home,
   category,
   news,
+  detail,
 }
 
 class AppNavigationCubit extends Cubit<AppNavigationState> {
@@ -12,4 +13,5 @@ class AppNavigationCubit extends Cubit<AppNavigationState> {
   void showHome() => emit(AppNavigationState.home);
   void showCategory() => emit(AppNavigationState.category);
   void showNews() => emit(AppNavigationState.news);
+  void showDetail() => emit(AppNavigationState.detail);
 }

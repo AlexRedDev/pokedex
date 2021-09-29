@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 /// Paint widget to wrap PokeBallPainter.
 /// Receives a [Color] and a [double] opacity to be passed down to PokeBallPainter
-class PokeBallWidget extends StatelessWidget {
+class PokeBall extends StatelessWidget {
   final Color color;
   final double? opacity;
   final CustomPainter? foregroundPainter;
@@ -14,7 +14,7 @@ class PokeBallWidget extends StatelessWidget {
   final bool willChange;
   final Widget? child;
 
-  const PokeBallWidget(
+  const PokeBall(
       {Key? key,
       required this.color,
       this.opacity,
